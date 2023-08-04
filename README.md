@@ -2,45 +2,56 @@
 <img src="https://www.logo.wine/a/logo/Microsoft_Azure/Microsoft_Azure-Logo.wine.svg" alt="Azure Logo" />
 </p>
 
-<h1><h1>Creating a Virtual Machine in Azure</h1>
+# Creating a Virtual Machine in Azure
 This tutorial outlines the installation of a Virtual Macine in Microsoft's Azure cloud PAAS.<br />
 
-<h2>Environments and Technologies Used</h2>
+## Environments and Technologies Used
 
 - Microsoft Azure
 - Remote Desktop Protocol
 
-<h2>Operating Systems Used </h2>
+## Operating Systems Used
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
+## List of Prerequisites
 
 - Microsoft account
 - Internet connection
 
-<h2>Installation Steps</h2>
+## Installation Steps
+1. Go to the [Azure](https://portal.azure.com) portal and create a resourse group (resoures groups are a way to help organize your Azure services)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-First step is to go to 
-</p>
-<br />
+![resource groups](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/66f48d67-5a79-43d2-9453-d8c7b209f3b1)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+![Create RG](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/e6583522-7ff8-4eee-86d0-434e2b5adef2)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+After navigating to the resourse group creation page, just enter the name you want and clike "Review + create"
+
+![Name and tags](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/81c38638-15d0-45c4-9b4b-bd6f6dd5f1f1)
+
+2. Go to the Virtual Machines service, and set subscription, group, name, image, username and password
+
+![VMs](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/a82c9eae-7b48-4285-a24f-96945b4b7944)
+
+![Create VM](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/e650f89b-fce3-4b65-be1f-cc5df587d383)
+
+![VM Config 1](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/68f45429-610d-47f7-84c2-335f5c66f605)
+
+![VM Config 2](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/95e6c0e7-17c8-4898-b510-1af3f53c057b)
+
+- The subscription is the account that will be charged for the resourses
+- Set the "Resource group" to the one you created earlier
+- The image is the OS/iso file you would like to use
+- Size is the resources you would like to use (2vcpu 16 Gib used in this example)
+- If you would like to change the network settings, just click next twice anc you can confiure it there (out of scope)
+
+  After finishing with the creation of the VM go back to the VM service page, click on your VM, then copy the public IP address
+
+  ![Pub IP](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/effa8b3d-df83-4ade-a6b6-b7f36634247b)
+
+After copying the IP address open Remote Desktop Protocol, enter the IP address, click connect then enter the username and password
+
+![RDP](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/de368a50-c6ca-4c68-a2d4-bcd498f493ad)
+
+After clicking "OK" you should then be connected to the VM and able to use it as a regular computer
