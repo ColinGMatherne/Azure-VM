@@ -26,7 +26,7 @@ This tutorial outlines the installation of a Virtual Macine in Microsoft's Azure
 ## 
 ![Create RG](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/e6583522-7ff8-4eee-86d0-434e2b5adef2)
 
-After navigating to the resourse group creation page, just enter the name you want and clike "Review + create"
+After navigating to the resourse group creation page, just enter the name you want and click "Review + create"
 
 ![Name and tags](https://github.com/ColinGMatherne/Azure-VM/assets/132864551/81c38638-15d0-45c4-9b4b-bd6f6dd5f1f1)
 
