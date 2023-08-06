@@ -3,7 +3,7 @@
 </p>
 
 # Creating a Virtual Machine in Azure
-This tutorial outlines the installation of a Virtual Macine in Microsoft's Azure cloud PAAS.<br />
+This tutorial outlines the installation of a Virtual Macine in Microsoft's Azure<br />
 
 ## Environments and Technologies Used
 
